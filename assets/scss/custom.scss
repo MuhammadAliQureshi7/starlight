@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap');
+
+body, html, span, input, select, textarea, a, p, form, fieldset, legend, tbody, tfoot, tr, th, td, thead, ul, ol, li{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+a, a:link{
+    text-decoration: none;
+}
+a:hover, a:visited{
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.automodel{
+    display: block;
+    label{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    select{
+        width: 100%;
+        border: 1px solid #ccc;
+        height: 40px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    h1{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .modelmake{
+        display: flex;
+        list-style: none;
+        margin: 20px 0;
+        li{
+            font-size: 16px;
+            text-align: center;
+            width: 25%;
+            a{
+                border: 1px solid #ccc;
+                display: block;
+                line-height: 50px;
+                color: #000;
+                &:hover{
+                    background: rgb(55, 98, 240);
+                    border: 1px solid rgb(55, 98, 240);
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .vin-form{
+        input.vinnumber{
+            border: 1px solid #ccc;
+            line-height: 40px;
+        }
+        button{
+            width: 20%;
+        }
+        .my-vin{
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .myvin-content{
+            display: none;
+            p{
+                padding: 20px 0;
+            }
+        }
+    }
+}
+.demagesection{
+    display: block;
+    label{
+        font-size: 16px;
+        margin-bottom: 5px;
+        box-shadow: 0 0 10px #ccc;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        position: relative;
+    }
+    select{
+        width: 100%;
+        border: 1px solid #ccc;
+        height: 40px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    h1{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .modelmake{
+        display: flex;
+        list-style: none;
+        margin: 20px 0;
+        li{
+            font-size: 16px;
+            text-align: center;
+            width: 25%;
+            a{
+                border: 1px solid #ccc;
+                display: block;
+                line-height: 50px;
+                color: #000;
+                &:hover{
+                    background: rgb(55, 98, 240);
+                    border: 1px solid rgb(55, 98, 240);
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .glass-demage-wrapper{
+        display: block;
+        width: 100%;
+        list-style: none;
+        li{
+            margin-bottom: 10px;
+        }
+    }
+    .glass-image-windshield{
+        display: inline-block;
+        background: url(../images/sprite-suv.png) no-repeat 0 0;
+        
+    }
+    .dimension{
+        width: 80px;
+        height: 25px;
+        position: absolute;
+        right: 0;
+    }
+    .glass-image-backglass{
+        display: inline-block;
+        background: url(../images/sprite-suv.png) no-repeat 0 -36px;
+    }
+    .glass-image-driver{
+        display: inline-block;
+        background: url(../images/sprite-suv.png) no-repeat 0 -108px;
+    }
+    .glass-image-passenger{
+        display: inline-block;
+        background: url(../images/sprite-suv.png) no-repeat 0 -144px;
+    }
+    .glass-options{
+        display: none;
+        width: 100%;
+        margin-top: 0;
+        padding: 20px;
+        h2{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        div{
+            box-shadow: 0 0 10px #ccc;
+            display: inline-block;
+            padding: 20px;
+            text-align: center;
+            width: 48%;
+            border-radius: 10px;
+            margin-right: 5px;
+            img{
+                margin-bottom: 10px;
+            }
+            p{
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .glass-option.inner{
+        display: none;
+        width: 100%;
+        margin-top: 0;
+        padding: 20px;
+        label{
+            margin-bottom: 10px;
+        }
+        .glass-image-driver-front-door{
+            display: inline-block;
+            background: url(../images/sprite-suv.png) no-repeat 0 -215px;
+        }
+        .glass-image-driver-rear-door{
+            display: inline-block;
+            background: url(../images/sprite-suv.png) no-repeat 0 -252px;
+        }
+        .glass-image-driver-quarter{
+            display: inline-block;
+            background: url(../images/sprite-suv.png) no-repeat 0 -288px;
+        }
+        .glass-image-passenger-front-door{
+            display: inline-block;
+            background: url(../images/sprite-suv.png) no-repeat 0 -360px;
+        }
+        .glass-image-passenger-rear-door{
+            display: inline-block;
+            background: url(../images/sprite-suv.png) no-repeat 0 -396px;
+        }
+        .glass-image-passenger-quarter{
+            display: inline-block;
+            background: url(../images/sprite-suv.png) no-repeat 0 -468px;
+        }
+        .dimension-inner{
+            width: 80px;
+            height: 26px;
+            position: absolute;
+            right: 0;
+        }
+    }
+    .progress-section{
+        background: #f1f1f1;
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 5px;
+        a{
+            display: block;
+            color: #000;
+            line-height: 50px;
+        }
+        .progress-content{
+            display: none;
+            label{
+                box-shadow: none;
+                padding: 0;
+            }
+            p{
+                padding: 20px 0 30px;
+            }
+        }
+        
+    }
+}
+.demagetype{
+    display: block;
+    h1{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .glass-demagetype-wrapper{
+        display: flex;
+        width: 100%;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0 0 0;
+        li{
+            box-shadow: 0 0 10px #ccc;
+            width: 48%;
+            text-align: center;
+            padding: 20px 0;
+            img{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.glassquestion{
+    display: block;
+    h1{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    label{
+        font-weight: 600;
+        margin-bottom: 10px;
+        padding: 10px 0;
+    }
+    input[type=submit]{
+        margin-bottom: 8px;
+    }
+    .progress-section{
+        background: #f1f1f1;
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 5px;
+        a{
+            display: block;
+            color: #000;
+            line-height: 50px;
+        }
+        .progress-content{
+            display: none;
+            label{
+                box-shadow: none;
+                padding: 0;
+            }
+            p{
+                padding: 20px 0 30px;
+            }
+        }
+        
+    }
+}
+.quotedetail{
+    display: block;
+    text-align: center;
+    h1{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .pay-list{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        list-style: none;
+        margin-top: 30px;
+        li{
+            width: 20%;
+            border: 1px solid #0865df;
+            line-height: 40px;
+            border-radius: 5px 0 0 5px;
+            font-size: 14px;
+            &:last-child{
+                border-radius: 0 5px 5px 0;
+            }
+            &.active{
+                color: #fff;
+                border: 1px solid #0865df;
+                background: #0865df;
+            }
+        }
+    }
+    .payment-method{
+        list-style: none;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 20px;
+        li{
+            width: 30%;
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+            label{
+                font-weight: 600;
+            }
+            ol{
+                width: 100%;
+                margin: 20px 0;
+                padding-left: 30px;
+                li{
+                    border: none;
+                    width: 100%;
+                    padding: 0;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    box-shadow: none;
+                    font-weight: 400;
+                }
+            }
+            span{
+                color: rgb(16, 167, 41);
+                font-size: 14px;
+            }
+        }
+    }
+    .promocode-wrapper{
+        width: 40%;
+        display: inline-block;
+        margin-top: 30px;
+        a{
+            color: #000;
+        }
+        .promocode-content{
+            margin-top: 10px;
+
+        }
+    }
+    .continuebtn{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        width: 30%;
+        line-height: 40px;
+    }
+    .progress-section{
+        background: #f1f1f1;
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 5px;
+        display: inline-block;
+        width: 50%;
+        text-align: left;
+        a{
+            display: block;
+            color: #000;
+            line-height: 50px;
+        }
+        .progress-content{
+            display: none;
+            border-top: 1px solid #ccc;
+            label{
+                box-shadow: none;
+                padding: 0;
+            }
+            p{
+                padding: 20px 0 30px;
+            }
+            span{
+                color: #333;
+                font-size: 12px;
+                padding-top: 10px;
+                display: block;
+                line-height: 21px;
+            }
+        }
+        
+    }
+}
+.insurancedetail{
+    display: block;
+    h1{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    label{
+        font-weight: 600;
+        margin-bottom: 10px;
+        padding: 10px 0;
+    }
+    a{
+        font-size: 16px;
+        padding: 20px 0;
+        display: inline-block;
+        color: blue;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
