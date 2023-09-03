@@ -14,6 +14,23 @@ a:hover, a:visited{
 body{
     font-family: 'Poppins', sans-serif;
 }
+header{
+    padding: 20px 0 50px;
+    .logo{
+        img{
+            width: 40%;
+        }
+    }
+    .steps{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 50px;
+        box-shadow: 0 0 10px #ccc;
+        padding: 10px 20px;
+        width: 20%;
+    }
+}
 .automodel{
     display: block;
     label{
